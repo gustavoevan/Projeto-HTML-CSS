@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Sistema Escolar - Desafio HTML e CSS</title>
+
+    <!-- Arquivo externo responsável pela aparência da página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+         CABEÇALHO: apresenta a imagem principal e o título do sistema
+         ========================================================= -->
+    <header class="cabecalho">
+        <img
+            src="imagem-cabecalho.svg"
+            alt="Ilustração de estudantes desenvolvendo um sistema"
+            class="cabecalho__imagem"
+        >
+
+        <div class="cabecalho__texto">
+            <h1>Sistema de Cadastro</h1>
+            <p>Projeto prático de HTML e CSS</p>
+        </div>
+    </header>
+
+    <!-- =========================================================
+         NAVBAR: menu principal exibido na parte superior da página
+         ========================================================= -->
+    <nav class="navbar" aria-label="Navegação principal">
+        <ul class="navbar__lista">
+            <li><a href="#inicio">Home</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================================================
+         CONTEÚDO: área dividida em menu lateral e conteúdo principal
+         ========================================================= -->
+    <div class="layout">
+
+        <!-- =====================================================
+             MENU LATERAL: opções de navegação internas do sistema
+             ===================================================== -->
+        <aside class="menu-lateral">
+            <h2>Menu</h2>
+
+            <ul class="menu-lateral__lista">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#clientes">Clientes</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#relatorios">Relatórios</a></li>
+            </ul>
+        </aside>
+
+        <!-- =====================================================
+             ÁREA PRINCIPAL: contém o formulário de cadastro
+             ===================================================== -->
+        <main class="conteudo-principal" id="inicio">
+
+            <!-- Título e texto introdutório da área de cadastro -->
+            <section class="apresentacao">
+                <span class="etiqueta">Cadastro</span>
+                <h2>Cadastre um novo usuário</h2>
+                <p>Preencha os campos abaixo e clique no botão salvar.</p>
+            </section>
+
+            <!-- Formulário para coleta dos dados do usuário -->
+            <section class="cartao-formulario">
+                <form class="formulario" action="#" method="post">
+
+                    <!-- Campo para informar o nome completo -->
+                    <div class="formulario__grupo">
+                        <label for="nome">Nome</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome completo"
+                            required
+                        >
+                    </div>
+
+                    <!-- Campo para informar o endereço de e-mail -->
+                    <div class="formulario__grupo">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="exemplo@email.com"
+                            required
+                        >
+                    </div>
+
+                    <!-- Campo para cadastrar uma senha -->
+                    <div class="formulario__grupo">
+                        <label for="senha">Senha</label>
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Digite uma senha"
+                            minlength="6"
+                            required
+                        >
+                        <small>A senha deve possuir pelo menos 6 caracteres.</small>
+                    </div>
+
+                    <!-- Botão responsável pelo envio do formulário -->
+                    <button type="submit" class="botao-salvar" onclick="alert('Dados salvos com sucesso!!!')">
+                        Salvar cadastro
+                    </button>
+                </form>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- =========================================================
+         RODAPÉ: informa a autoria do projeto
+         ========================================================= -->
+    <footer class="rodape" id="contato">
+        <p>Sistema desenvolvido pelos alunos</p>
+        <p class="rodape__complemento">Curso de Desenvolvimento de Sistemas</p>
+    </footer>
+
+</body>
+</html>
