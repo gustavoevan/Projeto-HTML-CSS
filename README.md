@@ -1,164 +1,100 @@
-# Desafio prático — Página de Sistema com HTML e CSS
+💻 Sistema de Cadastro — HTML e CSS
 
-## Objetivo
+Projeto desenvolvido como parte de um desafio prático de desenvolvimento web, com o objetivo de construir uma interface inicial de um sistema de cadastro utilizando HTML5 e CSS3.
 
-Construir uma página web responsiva que represente a interface inicial de um sistema de cadastro. O exercício deve consolidar o uso de HTML semântico, classes CSS, Flexbox, Grid, formulários, paleta de cores, estados de interação e responsividade.
+A aplicação apresenta um layout moderno, organizado e responsivo, explorando conceitos fundamentais de estruturação de páginas, estilização e organização de elementos visuais.
 
-## Arquivos do projeto
+🎯 Sobre o Projeto
 
-```text
+O projeto consiste em uma página web que simula a interface inicial de um sistema de gerenciamento de cadastros.
+
+A interface foi construída utilizando HTML semântico e CSS, buscando proporcionar uma experiência visual agradável, com navegação intuitiva e adaptação para diferentes tamanhos de tela.
+
+Durante o desenvolvimento, foram aplicados conceitos importantes de desenvolvimento front-end, como Flexbox, CSS Grid, formulários, variáveis CSS e responsividade.
+
+🚀 Tecnologias Utilizadas
+HTML5: estruturação do conteúdo e utilização de elementos semânticos.
+CSS3: estilização, organização visual e responsividade.
+Flexbox: alinhamento e distribuição dos elementos.
+CSS Grid: organização do layout em colunas.
+Media Queries: adaptação da interface para dispositivos menores.
+✨ Funcionalidades e Recursos
+Cabeçalho com imagem de fundo, título e subtítulo.
+Barra de navegação com links para diferentes seções.
+Menu lateral com opções de gerenciamento.
+Área principal com apresentação do sistema.
+Formulário de cadastro com campos de nome, e-mail e senha.
+Botão para envio do cadastro.
+Efeitos visuais de interação com hover e focus.
+Layout responsivo para diferentes resoluções de tela.
+Organização visual com cartões, bordas arredondadas e sombras.
+🎨 Identidade Visual
+
+O projeto utiliza uma paleta de cores baseada em tons de azul, branco, cinza e verde, buscando transmitir uma aparência moderna e profissional.
+
+Elemento	Cor
+Cabeçalho e rodapé	#16324F
+Links e destaques	#2563EB
+Fundos de destaque	#DBEAFE
+Botão principal	#16A34A
+Fundo da página	#F1F5F9
+Bordas	#CBD5E1
+Texto secundário	#475569
+Cartões e campos	#FFFFFF
+
+As cores são organizadas por meio de variáveis CSS no seletor :root, facilitando a manutenção e a padronização da interface.
+
+📁 Estrutura do Projeto
+text
 desafio_html_css/
-├── index.html
-├── style.css
-└── imagem-cabecalho.svg
-```
+│
+├── index.html              # Estrutura principal da página
+├── style.css               # Estilização e responsividade
+├── imagem-cabecalho.svg    # Imagem utilizada no cabeçalho
+│
+└── README.md               # Documentação do projeto
 
-## Estrutura obrigatória da página
+📱 Responsividade
 
-### 1. Cabeçalho
+A interface foi planejada para funcionar em diferentes tamanhos de tela, incluindo computadores, tablets e smartphones.
 
-Utilizar a tag `<header>` com:
+Em dispositivos com largura inferior a 760px, o layout se adapta para melhorar a experiência de navegação:
 
-- uma imagem ocupando toda a área;
-- um título principal;
-- um pequeno subtítulo;
-- texto sobreposto à imagem.
+O menu lateral passa a ficar acima do conteúdo principal.
+O layout de duas colunas é reorganizado em uma única coluna.
+O botão de cadastro ocupa toda a largura disponível.
+A barra de navegação permite a quebra de linha.
+📚 Conceitos Praticados
 
-### 2. Navbar superior
+Durante a construção deste projeto, foram trabalhados os seguintes conceitos:
 
-Utilizar a tag `<nav>`, uma lista `<ul>` e links `<a>` contendo:
+Estrutura HTML semântica.
+Organização de classes CSS.
+Seletores e variáveis CSS.
+Flexbox e CSS Grid.
+Espaçamentos com padding, margin e gap.
+Bordas arredondadas e sombras.
+Estados de interação com hover e focus.
+Transições e posicionamento de elementos.
+Imagens com object-fit.
+Responsividade utilizando Media Queries.
+▶️ Como Executar o Projeto
+Faça o download ou clone este repositório:
+bash
+git clone URL_DO_REPOSITORIO
 
-- Home;
-- Produtos;
-- Clientes;
-- Contato.
+Entre na pasta do projeto:
+bash
+cd desafio_html_css
 
-Os links devem ficar lado a lado em telas maiores e poderão quebrar linha em telas menores.
+Abra o arquivo index.html no navegador de sua preferência.
 
-### 3. Área de conteúdo em duas colunas
+Não é necessário instalar dependências ou configurar um servidor para visualizar a página.
 
-Criar uma `<div class="layout">` usando CSS Grid:
+🎓 Objetivo Acadêmico
 
-- coluna esquerda com largura aproximada de `240px`;
-- coluna direita ocupando o espaço restante;
-- espaçamento de aproximadamente `28px` entre as colunas.
+Este projeto foi desenvolvido com finalidade educacional, visando colocar em prática os conhecimentos adquiridos sobre HTML e CSS no desenvolvimento de interfaces web.
 
-### 4. Menu lateral
+A atividade permite compreender melhor como estruturar, estilizar e organizar uma página, além de desenvolver habilidades essenciais para a criação de aplicações front-end.
 
-Utilizar a tag `<aside>` contendo:
-
-- Dashboard;
-- Clientes;
-- Produtos;
-- Relatórios.
-
-O menu deverá ter fundo branco, cantos arredondados e efeito visual ao passar o mouse.
-
-### 5. Área principal
-
-Utilizar a tag `<main>` contendo uma introdução e um formulário.
-
-O formulário deve possuir:
-
-- campo Nome;
-- campo E-mail;
-- campo Senha;
-- botão Salvar cadastro.
-
-Cada campo deverá ser colocado dentro de sua própria `<div class="formulario__grupo">`.
-
-### 6. Rodapé
-
-Utilizar a tag `<footer>` com a frase:
-
-> Sistema desenvolvido pelos alunos
-
-## Paleta de cores sugerida
-
-| Finalidade | Cor | Código |
-|---|---|---|
-| Cabeçalho e rodapé | Azul-escuro | `#16324F` |
-| Links e destaques | Azul principal | `#2563EB` |
-| Fundos de destaque | Azul-claro | `#DBEAFE` |
-| Botão principal | Verde | `#16A34A` |
-| Fundo da página | Cinza-claro | `#F1F5F9` |
-| Bordas | Cinza médio | `#CBD5E1` |
-| Texto secundário | Cinza escuro | `#475569` |
-| Cartões e campos | Branco | `#FFFFFF` |
-
-As cores devem ser criadas como variáveis dentro do seletor `:root`.
-
-## Recursos CSS que devem ser praticados
-
-- seletor universal `*`;
-- variáveis CSS;
-- `display: flex`;
-- `display: grid`;
-- `gap`;
-- `padding` e `margin`;
-- `border-radius`;
-- `box-shadow`;
-- `hover` e `focus`;
-- `transition`;
-- `object-fit`;
-- `position: relative` e `position: absolute`;
-- media query com `@media`.
-
-## Divisões sugeridas
-
-```html
-<body>
-    <header class="cabecalho">...</header>
-
-    <nav class="navbar">...</nav>
-
-    <div class="layout">
-        <aside class="menu-lateral">...</aside>
-
-        <main class="conteudo-principal">
-            <section class="apresentacao">...</section>
-            <section class="cartao-formulario">
-                <form class="formulario">
-                    <div class="formulario__grupo">...</div>
-                </form>
-            </section>
-        </main>
-    </div>
-
-    <footer class="rodape">...</footer>
-</body>
-```
-
-## Requisitos de responsividade
-
-Quando a largura da tela for menor que `760px`:
-
-- o menu lateral deve ficar acima do conteúdo principal;
-- o layout deve passar de duas colunas para uma coluna;
-- o botão deve ocupar toda a largura;
-- a navbar poderá quebrar linha.
-
-## Critérios de avaliação sugeridos
-
-| Critério | Pontuação |
-|---|---:|
-| Estrutura HTML semântica | 2,0 |
-| Organização das classes e divs | 1,5 |
-| Formulário completo | 1,5 |
-| Aplicação da paleta de cores | 1,0 |
-| Uso de Flexbox e Grid | 1,5 |
-| Efeitos de hover e focus | 1,0 |
-| Responsividade | 1,0 |
-| Comentários e organização do código | 0,5 |
-| **Total** | **10,0** |
-
-## Desafio adicional
-
-Acrescentar:
-
-- ícones aos menus;
-- campo de confirmação de senha;
-- checkbox para aceitar os termos;
-- mensagem de sucesso após o envio;
-- modo escuro;
-- validação com JavaScript.
+Desenvolvido como projeto acadêmico de HTML5 e CSS3. 💙
